@@ -158,11 +158,8 @@ def _build_thread(major_diam, pitch, depth, angle_deg, length):
     # Sweep thread profile along helix for real geometry thread.
     thread_shape = profile_wire.makePipeShell([helix], True, True)
     if getattr(thread_shape, "ShapeType", "") == "Solid":
-        thread = thread_shape
-    else:
-        thread = Part.Solid(thread_shape)
-    core = Part.makeCylinder(root_radius, length)
-    return core.fuse(thread)
+        return thread_shape
+    return Part.Solid(thread_shape)
 
 
 def build_screw(params):
@@ -185,7 +182,18 @@ def build_screw(params):
     adjusted_major = max(diameter - 2.0 * tol, diameter * 0.6)
 
     thread_length = length
-    body = _build_thread(adjusted_major, pitch, depth, angle, thread_length)
+    major_radius = adjusted_major / 2.0
+
+    # Always create a visible body so the screw remains usable even if
+    # helical thread solidification fails for a specific parameter set.
+    body = Part.makeCylinder(major_radius, thread_length)
+
+    try:
+        thread = _build_thread(adjusted_major, pitch, depth, angle, thread_length)
+        body = body.fuse(thread)
+    except Exception:
+        # Keep the plain shaft as a robust fallback geometry.
+        pass
 
     head_type = params["head_type"]
     if head_type == "Hex":
