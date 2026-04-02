@@ -13,27 +13,26 @@ This addon adds a `SnartScrews` workbench with a dialog for creating screws.
 
 ## Install
 
-1. Zip this folder or keep it as an addon directory.
-2. Install it via FreeCAD Addon Manager or place it in your Mod folder.
-3. Restart FreeCAD.
-4. Open the `SnartScrews` workbench and run `Create Screw`.
+### Option 1: FreeCAD Addon Manager from GitHub URL
+
+1. Open `Tools -> Addon manager` in FreeCAD.
+2. Use the install-from-URL option (Git repository URL).
+3. Paste `https://github.com/larsnygard/SnartScrews`.
+4. Install and restart FreeCAD.
+5. Open the `SnartScrews` workbench and run `Create Screw`.
+
+### Option 2: Manual install
+
+1. Download this repository as ZIP and extract to your FreeCAD `Mod` folder as `SnartScrews`.
+2. Restart FreeCAD.
+3. Open the `SnartScrews` workbench and run `Create Screw`.
 
 ## Notes
 
 - The generated thread is a geometric helical thread built from a swept triangular profile.
 - Presets are editable after selection.
 
-## Addon Manager Listing
+## Addon Manager Notes
 
-If you copied this folder manually into `Mod`, it installs locally but does not appear as a searchable entry in Addon Manager. That is expected.
-
-To make `SnartScrews` appear in Addon Manager:
-
-1. Publish this addon in a public repository (GitHub/GitLab/Codeberg).
-2. Update `package.xml` with your real repository URL and maintainer info.
-3. Open an issue in `FreeCAD/FreeCAD-addons` using their addon submission template.
-4. Submit a PR to `FreeCAD/FreeCAD-addons` that adds:
-	- an entry for your repo in `AddonCatalog.json` (FreeCAD 1.0+)
-	- a `.gitmodules` entry (legacy compatibility)
-
-Reference: `https://github.com/FreeCAD/FreeCAD-addons/blob/master/Documentation/Submission.md`
+- This repo is prepared for direct installation from your own GitHub URL.
+- It does not need inclusion in the public `FreeCAD/FreeCAD-addons` catalog for personal use.
