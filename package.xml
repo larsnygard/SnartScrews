@@ -2,12 +2,11 @@
 <package format="1">
   <name>SnartScrews</name>
   <description>SnartScrews add-on for generating parameterized screws from a dialog.</description>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
   <date>2026-04-02</date>
   <maintainer email="noreply@github.com">larsnygard</maintainer>
   <license file="LICENSE">MIT</license>
   <url type="repository">https://github.com/larsnygard/SnartScrews</url>
-  <url type="readme">https://github.com/larsnygard/SnartScrews#readme</url>
   <content>
     <workbench>
       <name>SnartScrews</name>

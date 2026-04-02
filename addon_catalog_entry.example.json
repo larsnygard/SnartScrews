@@ -2,9 +2,9 @@
   "SnartScrews": [
     {
       "repository": "https://github.com/larsnygard/SnartScrews",
-      "git_ref": "v0.1.1",
-      "branch_display_name": "v0.1.1",
-      "zip_url": "https://github.com/larsnygard/SnartScrews/archive/refs/tags/v0.1.1.zip",
+      "git_ref": "v0.1.2",
+      "branch_display_name": "v0.1.2",
+      "zip_url": "https://github.com/larsnygard/SnartScrews/archive/refs/tags/v0.1.2.zip",
       "freecad_min": "1.0.0"
     }
   ]
