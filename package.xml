@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package format="1">
+  <name>SnartScrews</name>
+  <description>SnartScrews add-on for generating parameterized screws from a dialog.</description>
+  <version>0.1.0</version>
+  <date>2026-04-02</date>
+  <maintainer email="noreply@example.com">FreeCAD User</maintainer>
+  <license file="LICENSE">MIT</license>
+  <url type="repository">https://github.com/larsnygard/freecad</url>
+  <content>
+    <workbench>
+      <name>SnartScrews</name>
+      <classname>ScrewGeneratorWorkbench</classname>
+      <subdirectory>.</subdirectory>
+    </workbench>
+  </content>
+</package>

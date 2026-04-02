@@ -1,0 +1,11 @@
+{
+  "SnartScrews": [
+    {
+      "repository": "https://github.com/<your-user>/SnartScrews",
+      "git_ref": "main",
+      "branch_display_name": "main",
+      "zip_url": "https://github.com/<your-user>/SnartScrews/archive/refs/heads/main.zip",
+      "freecad_min": "1.0.0"
+    }
+  ]
+}
