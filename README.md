@@ -36,3 +36,21 @@ This addon adds a `SnartScrews` workbench with a dialog for creating screws.
 
 - This repo is prepared for direct installation from your own GitHub URL.
 - It does not need inclusion in the public `FreeCAD/FreeCAD-addons` catalog for personal use.
+
+## Tag-Based Updates (Recommended)
+
+For stable Addon Manager updates, use tags instead of `main`.
+
+1. Bump version in `package.xml` and `metadata.txt` (example: `0.1.2`).
+2. Commit and push.
+3. Create and push tag:
+
+```powershell
+git tag v0.1.2
+git push origin v0.1.2
+```
+
+4. In your custom catalog entry, set:
+
+- `git_ref`: `v0.1.2`
+- `zip_url`: `https://github.com/larsnygard/SnartScrews/archive/refs/tags/v0.1.2.zip`

@@ -1,0 +1,13 @@
+[general]
+name=SnartScrews
+version=0.1.1
+date=2026-04-02
+author=larsnygard
+maintainer=larsnygard
+license=MIT
+description=Generate parameterized screws with selectable head and thread settings.
+url=https://github.com/larsnygard/SnartScrews
+
+[dependencies]
+workbenches=
+pylibs=
